@@ -21,9 +21,6 @@ main{
 	background: var(--main-background);
 }
 
-/*────────────────── 
-       header
-──────────────────*/
 
 header{
 	margin: 0 auto;
@@ -37,6 +34,10 @@ header{
 	top: 0;
 	transition: 0.3s;
 	z-index: 5;
+}
+
+.myimg{
+	border-radius: 50%;
 }
 .nav-show{
 	opacity: 0;
@@ -78,9 +79,7 @@ a.nav-link{
     background: var(--main-decor-color);
 }
 
-/*──────────────────
-       home
-──────────────────*/
+
 
 #home{ 	
 	margin: auto;
@@ -129,10 +128,13 @@ a.nav-link{
 	text-shadow: 0px 0px 40px var(--main-decor-color);
 }
 
-
-/*──────────────────
-    social media
-──────────────────*/
+.skills{
+	padding: 10px;
+	display: flex;
+	position: center;
+    align-items: space-around;
+	justify-content:center;
+}
 
 .social-media{
 	padding: 10px;
@@ -159,9 +161,6 @@ a.nav-link{
 	text-shadow: 0 0 50px var(--main-decor-color);
 }
 
-/*──────────────────
-      projects
-──────────────────*/
 
 #projects{
 	margin-top:100px;
@@ -228,9 +227,7 @@ a.nav-link{
 	box-shadow: 0 0 1.5rem gray;
 }
 
-/*──────────────────
-      Contact
-──────────────────*/
+
 
 #contact{
 	margin: auto;
@@ -250,9 +247,7 @@ a.nav-link{
 	font-family: var(--main-font-family);
 }
 
-/*────────────────── 
-       footer
-──────────────────*/
+
 
 footer {
 	width: 100%;
@@ -278,8 +273,6 @@ footer {
 	color: var(--main-decor-color);
 }
 
-/*──── hr ─────*/
-
 hr {
     background: var(--main-decor-color);
 	margin: 2px;
@@ -291,9 +284,7 @@ hr {
     margin-inline-end: auto;
 }
 
-/*────────────────── 
-     Scrollbar
-──────────────────*/
+
 ::-webkit-Scrollbar{
     width: 5px; 
 	background: rgba(5,5,5,1);
@@ -308,47 +299,6 @@ hr {
 	border-radius: 10px;
 }
 
-/*────────────────── 
-     hamburger
-──────────────────*/
-.hamburger {
-	display: none;
-}
-
-.hamburger div{
-	width: 30px;
-	height: 3px;
-	background: #dbdbdb;
-	margin: 5px;
-	transition:all 0.3s ease;
-}
-
-.toggle .line1{
-	transform: rotate(-45deg) translate(-5px,6px);
-}
-
-.toggle .line2{
-	opacity: 0;
-}
-
-.toggle .line3{
-	transform: rotate(45deg) translate(-5px,-6px);
-}
-
-@keyframes navLinkFade{
-	from{
-		opacity:0;
-		transform: translatex(50px);
-	}
-	to{
-		opacity: 1;
-		transform:translatex(0px);
-	}
-}
-
-/*────────────────── 
-    media queries
-──────────────────*/
 
 @media only screen and (max-width: 1484px) and (min-width: 1214px) {
 	.work{
@@ -393,19 +343,7 @@ hr {
 		transition: transform 0.5s ease-in;
 		z-index: -1;
 	}
-	.hamburger{
-		position:absolute;
-		top: 17px;
-		right: 25%;
-		display: block;
-		cursor:pointer;
-		z-index: 5;
-	}	
 	.nav-bar li{
 		opacity:0;
 	}
-}
-
-.nav-active{
-	transform:translatex(0%);
 }
