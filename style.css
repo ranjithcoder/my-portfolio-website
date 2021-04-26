@@ -320,11 +320,6 @@ hr {
 	header{
 		background-color: var(--main-header-background);
 	}
-	.logo{
-		position:absolute;
-		top: 2px;
-		left: 30px;
-	}
 	.nav-show{
 		opacity: 1;
 	}	 
